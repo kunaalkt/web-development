@@ -46,7 +46,10 @@ body {
     border-bottom-right-radius: 10px;
 }
 
-.buttons button {
+.operand-btn,
+.operator-btn,
+.calculate-btn,
+.clr-btn {
     color: white;
     background-color: rgb(70, 70, 70);
     font-size: 30px;
@@ -58,24 +61,29 @@ body {
     cursor: pointer;
 }
 
-.buttons button:hover {
+.operand-btn:hover,
+.operator-btn:hover,
+.calculate-btn:hover,
+.clr-btn:hover {
     box-shadow: 3px 5px 10px rgba(125, 125, 125, 0.1);
 }
 
-.buttons button:active {
+.operand-btn:active,
+.calculate-btn:active,
+.clr-btn:active {
     color: black;
     background-color: white;
 }
 
-.buttons .operator {
+.operator-btn {
     background-color: rgb(255, 102, 0);
 }
 
-.buttons .operator:active {
+.operator-btn:active {
     color: rgb(255, 102, 0);
     background-color: white;
 }
 
-.buttons .clr-btn {
+.clr-btn {
     font-size: 18px;
 }

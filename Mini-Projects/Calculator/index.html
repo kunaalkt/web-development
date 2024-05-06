@@ -11,35 +11,35 @@
 <body>
     <div class="calculator">
         <div class="result">
-            <p class="result-text"></p>
+            <p class="result-text js-result-text"></p>
         </div>
         <div class="buttons">
             <p>
-                <button onclick="updateExpression('1')">1</button>
-                <button onclick="updateExpression('2')">2</button>
-                <button onclick="updateExpression('3')">3</button>
-                <button class="operator" onclick="updateExpression('+')">+</button>
+                <button class="operand-btn js-operand-btn">1</button>
+                <button class="operand-btn js-operand-btn">2</button>
+                <button class="operand-btn js-operand-btn">3</button>
+                <button class="operator-btn js-operator-btn">+</button>
             </p>
             <p>
-                <button onclick="updateExpression('4')">4</button>
-                <button onclick="updateExpression('5')">5</button>
-                <button onclick="updateExpression('6')">6</button>
-                <button class="operator" onclick="updateExpression('-')">-</button>
+                <button class="operand-btn js-operand-btn">4</button>
+                <button class="operand-btn js-operand-btn">5</button>
+                <button class="operand-btn js-operand-btn">6</button>
+                <button class="operator-btn js-operator-btn">-</button>
             </p>
             <p>
-                <button onclick="updateExpression('7')">7</button>
-                <button onclick="updateExpression('8')">8</button>
-                <button onclick="updateExpression('9')">9</button>
-                <button class="operator" onclick="updateExpression('*' )">*</button>
+                <button class="operand-btn js-operand-btn">7</button>
+                <button class="operand-btn js-operand-btn">8</button>
+                <button class="operand-btn js-operand-btn">9</button>
+                <button class="operator-btn js-operator-btn">*</button>
             </p>
             <p>
-                <button onclick="updateExpression('0')">0</button>
-                <button onclick="updateExpression('.')">.</button>
-                <button onclick="calculateExpression();">=</button>
-                <button class="operator" onclick="updateExpression('/')">/</button>
+                <button class="operand-btn js-operand-btn">0</button>
+                <button class="operand-btn js-operand-btn">.</button>
+                <button class="calculate-btn js-calculate-btn">=</button>
+                <button class="operator-btn js-operator-btn">/</button>
             </p>
             <p>
-                <button class="clr-btn" onclick="clearExpression();">Clear</button>
+                <button class="clr-btn js-clr-btn">Clear</button>
             </p>
         </div>
     </div>
