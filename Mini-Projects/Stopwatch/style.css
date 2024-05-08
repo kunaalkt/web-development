@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Varela Round", sans-serif;
+  background: #0f0c29;
+  background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
+  background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+  color: white
+}
+
+.stopwatch-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #e6e6e6;
+  font-size: 75px;
+  border: 15px solid #70FFA2;
+  border-radius: 50%;
+  height: 475px;
+  width: 475px;
+  margin: auto;
+  margin-top: 4%;
+
+}
+
+.stopwatch-container hr {
+  background-color: #70FFA2;
+  border: none;
+  border-radius: 5px;
+  height: 5px;
+  width: 400px;
+  margin: 40px 0px 10px 0px;
+}
+
+.start-btn,
+.reset-btn,
+.lap-btn {
+  background-color: #f0f0f0;
+  font-family: "Varela Round", sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  height: 45px;
+  width: 100px;
+  margin-right: 5px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: color 0.2s, background-color 0.2s
+}
+
+.start-btn:hover,
+.reset-btn:hover,
+.lap-btn:hover {
+  background-color: #70FFA2;
+}
+
+.reset-btn,
+.lap-btn {
+  display: none;
+}
+
+.is-toggled {
+  display: inline;
+}
+
+.lap-display {
+  position: absolute;
+  top: 0px;
+  color: #FFA270;
+  font-size: 22px;
+}
