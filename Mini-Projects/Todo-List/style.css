@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #f6ecc4;
+  background-image: linear-gradient(315deg, #f6ecc4 0%, #f7d4d4 74%);
+  margin-bottom: 1000px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 50px;
+}
+
+h2 {
+  color: #018749;
+  display: none;
+  text-align: center;
+  font-size: 30px;
+  margin-top: 30px;
+}
+
+.task-input {
+  color: black;
+  background: transparent;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  height: 40px;
+  width: 90%;
+  margin: 15px -4px 0px 10px;
+  padding: 0px 0px 0px 12px;
+  border: 2px solid #3B0404;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-right-width: 0px;
+}
+
+.task-input::placeholder {
+  color: #3B0404;
+}
+
+.task-input:focus {
+  outline: none;
+}
+
+.task-add-btn {
+  background-color: transparent;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  height: 44px;
+  width: 5%;
+  padding: 0px 2px 0px 0px;
+  border: 2px solid #3B0404;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  cursor: pointer;
+  transition: color 0.2s, background-color 0.2s;
+}
+
+.task-add-btn:hover {
+  color: white;
+  background-color: rgb(122, 30, 30);
+}
+
+.tasklist-display {
+  position: relative;
+}
+
+.task-finish-btn {
+  font-size: 22px;
+  font-weight: 900;
+  position: absolute;
+  right: 85px;
+  height: 40px;
+  width: 40px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: color 0.2s, background-color 0.2s;
+}
+
+.task-finish-btn:hover:enabled {
+  color: white;
+  background-color: #018749;
+}
+
+.task-finish-btn:active:enabled {
+  background-color: #035b32;
+}
+
+.task-finish-btn:disabled {
+  cursor: default;
+}
+
+.task-delete-btn {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  position: absolute;
+  right: 10px;
+  border: none;
+  border-radius: 3px;
+  height: 40px;
+  width: 70px;
+  cursor: pointer;
+  transition: color 0.2s, background-color 0.2s;
+}
+
+.task-delete-btn:hover {
+  color: white;
+  background-color: rgb(122, 30, 30);
+}
+
+.task-delete-btn:active {
+  background-color: rgb(72, 18, 18);
+}
+
+.tasklist-text {
+  color: white;
+  background-color: #DC143C;
+  padding: 5px 0px 5px 18px;
+  font-size: 23px;
+  font-weight: 500;
+  height: 40px;
+  border: 2px solid black;
+}
+
+.finished-task {
+  background-color: #018749;
+  text-decoration: line-through;
+}
