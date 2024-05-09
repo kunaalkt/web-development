@@ -36,7 +36,7 @@ body {
   border-radius: 5px;
   height: 5px;
   width: 400px;
-  margin: 40px 0px 10px 0px;
+  margin: 50px 0px 20px 0px;
 }
 
 .start-btn,
@@ -48,17 +48,23 @@ body {
   font-weight: 600;
   height: 45px;
   width: 100px;
-  margin-right: 5px;
+  margin: 0px 5px 0px 0px;
   border: none;
   border-radius: 20px;
   cursor: pointer;
-  transition: color 0.2s, background-color 0.2s
+  transition: color 0.2s, background-color 0.2s;
 }
 
 .start-btn:hover,
 .reset-btn:hover,
 .lap-btn:hover {
   background-color: #70FFA2;
+}
+
+.start-btn:active,
+.reset-btn:active,
+.lap-btn:active {
+  background-color: #628f73;
 }
 
 .reset-btn,
