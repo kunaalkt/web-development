@@ -11,16 +11,19 @@
 <body>
   <div class="tasklist-container">
     <h1>Todo-List</h1>
-    <input class="task-input js-task-input" type="text" placeholder="Add Task" />
-    <button class="task-add-btn js-task-add-btn">Add</button>
+    <p class="date-time-text js-date-time-text"></p>
 
-    <h2>Tasks</h2>
-    <div class="tasklist-display js-tasklist-display">
+    <div class="input-display">
+      <input class="task-input js-task-input" type="text" placeholder="Add task...">
+      <button class="task-add-btn js-task-add-btn">Add</button>
     </div>
+
+    <h2 class="tasks-heading"></h2>
+    <div class="tasklist-display js-tasklist-display"></div>
   </div>
 
-
-  <script src="script.js"></script>
+  <script src="scripts/date.js"></script>
+  <script src="scripts/script.js"></script>
 </body>
 
 </html>

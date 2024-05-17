@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
 * {
   margin: 0;
@@ -6,43 +6,47 @@
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
-  background-color: #f6ecc4;
+  font-family: "Rubik", sans-serif;
+  background-color: #F6ecc4;
   background-image: linear-gradient(315deg, #f6ecc4 0%, #f7d4d4 74%);
   margin-bottom: 1000px;
 }
 
 h1 {
   text-align: center;
-  font-size: 50px;
+  font-size: 65px;
+  cursor: default;
 }
 
-h2 {
-  color: #018749;
-  display: none;
+.date-time-text {
   text-align: center;
-  font-size: 30px;
-  margin-top: 30px;
+  font-size: 23px;
+  margin: 5px 0px 0px 0px;
+}
+
+.input-display {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 25px 0px 0px 0px;
 }
 
 .task-input {
   color: black;
   background: transparent;
-  font-family: "Open Sans", sans-serif;
-  font-size: 18px;
+  font-family: "Rubik", sans-serif;
+  font-size: 19px;
   font-weight: 600;
-  height: 40px;
-  width: 90%;
-  margin: 15px -4px 0px 10px;
-  padding: 0px 0px 0px 12px;
-  border: 2px solid #3B0404;
+  height: 45px;
+  width: 85%;
+  border: 3px solid #3B0404;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
-  border-right-width: 0px;
+  padding: 0px 0px 0px 12px;
 }
 
 .task-input::placeholder {
-  color: #3B0404;
+  color: #5f2424;
 }
 
 .task-input:focus {
@@ -50,89 +54,124 @@ h2 {
 }
 
 .task-add-btn {
+  color: #5f2424;
   background-color: transparent;
-  font-family: "Open Sans", sans-serif;
-  font-size: 18px;
+  font-family: "Rubik", sans-serif;
+  font-size: 19px;
   font-weight: 600;
-  height: 44px;
   width: 5%;
-  padding: 0px 2px 0px 0px;
-  border: 2px solid #3B0404;
+  border: 3px solid #3B0404;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
+  border-left-width: 0px;
   cursor: pointer;
-  transition: color 0.2s, background-color 0.2s;
+  transition: color 0.1s, background-color 0.1s, opacity 0.1s;
 }
 
 .task-add-btn:hover {
-  color: white;
-  background-color: rgb(122, 30, 30);
+  color: rgb(230, 230, 230);
+  background-color: #3B0404;
+}
+
+.task-add-btn:active {
+  opacity: 0.9;
+}
+
+.tasks-heading {
+  text-align: center;
+  color: green;
+  font-size: 30px;
+  margin-top: 30px;
+  padding: 5px;
+  border: 4px solid #3B0404;
+  border-bottom: none;
 }
 
 .tasklist-display {
   position: relative;
 }
 
-.task-finish-btn {
-  font-size: 22px;
-  font-weight: 900;
-  position: absolute;
-  right: 85px;
-  height: 40px;
-  width: 40px;
-  border: none;
-  border-radius: 3px;
-  cursor: pointer;
-  transition: color 0.2s, background-color 0.2s;
+.tasklist-task {
+  background-color: #FAA0A0;
+  height: 45px;
+  border: 4px solid #3B0404;
+  border-bottom: none;
+  padding: 5px;
 }
 
-.task-finish-btn:hover:enabled {
-  color: white;
-  background-color: #018749;
+.tasklist-task:first-child {
+  border-top: 4px solid #3B0404;
 }
 
-.task-finish-btn:active:enabled {
-  background-color: #035b32;
-}
-
-.task-finish-btn:disabled {
-  cursor: default;
-}
-
-.task-delete-btn {
-  font-family: "Open Sans", sans-serif;
-  font-size: 18px;
-  font-weight: 600;
-  position: absolute;
-  right: 10px;
-  border: none;
-  border-radius: 3px;
-  height: 40px;
-  width: 70px;
-  cursor: pointer;
-  transition: color 0.2s, background-color 0.2s;
-}
-
-.task-delete-btn:hover {
-  color: white;
-  background-color: rgb(122, 30, 30);
-}
-
-.task-delete-btn:active {
-  background-color: rgb(72, 18, 18);
+.tasklist-task:last-child {
+  border-bottom: 4px solid #3B0404;
 }
 
 .tasklist-text {
-  color: white;
-  background-color: #DC143C;
-  padding: 5px 0px 5px 18px;
-  font-size: 23px;
-  font-weight: 500;
-  height: 40px;
-  border: 2px solid black;
+  font-family: "Rubik", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0px 0px 0px 5%;
 }
 
-.finished-task {
+/* .task-time {
+  position: absolute;
+  right: 150px;
+} */
+
+.finish-btn {
+  font-size: 22px;
+  font-weight: 900;
+  position: absolute;
+  right: 130px;
+  height: 45px;
+  width: 45px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: color 0.1s, background-color 0.1s;
+}
+
+.finish-btn:hover:enabled {
+  color: white;
   background-color: #018749;
+}
+
+.finish-btn:active:enabled {
+  background-color: #035b32;
+}
+
+.finish-btn:disabled {
+  display: none;
+  cursor: default;
+}
+
+.is-finished {
   text-decoration: line-through;
+}
+
+.task-finished {
+  background-color: #90EE90;
+}
+
+.delete-btn {
+  font-size: 16px;
+  font-weight: 600;
+  position: absolute;
+  right: 45px;
+  height: 45px;
+  width: 70px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: color 0.1s, background-color 0.1s;
+}
+
+.delete-btn:hover {
+  color: white;
+  background-color: #781111;
+}
+
+.delete-btn:active {
+  background-color: #5f2424;
 }
