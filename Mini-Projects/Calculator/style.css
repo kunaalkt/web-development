@@ -49,7 +49,8 @@ body {
 .operand-btn,
 .operator-btn,
 .calculate-btn,
-.clr-btn {
+.back-btn,
+.ac-btn {
     color: white;
     background-color: rgb(70, 70, 70);
     font-size: 30px;
@@ -64,13 +65,15 @@ body {
 .operand-btn:hover,
 .operator-btn:hover,
 .calculate-btn:hover,
-.clr-btn:hover {
+.back-btn:hover,
+.ac-btn:hover {
     box-shadow: 3px 5px 10px rgba(125, 125, 125, 0.1);
 }
 
 .operand-btn:active,
 .calculate-btn:active,
-.clr-btn:active {
+.back-btn:active,
+.ac-btn:active {
     color: black;
     background-color: white;
 }
@@ -84,6 +87,7 @@ body {
     background-color: white;
 }
 
-.clr-btn {
-    font-size: 18px;
+.back-btn,
+.ac-btn {
+    font-size: 20px;
 }
