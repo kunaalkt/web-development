@@ -103,9 +103,6 @@ function toggleInput() {
     ) {
       genreSelectElement.disabled = false;
       generateButtonElement.disabled = false;
-    } else {
-      genreSelectElement.disabled = true;
-      generateButtonElement.disabled = true;
     }
   }
 }

@@ -60,7 +60,7 @@ const loQuotes = [
   },
   {
     id: 11,
-    quotation: `Tis better to have loved and lost
+    quotation: `'Tis better to have loved and lost
     Than never to have loved at all.`,
     author: "Alfred Lord Tennyson",
   },
