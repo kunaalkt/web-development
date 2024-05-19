@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: white;
+  background-color: #12100E;
+  background: linear-gradient(to right, #000000, #12100E, #131110, #12100E, #000000);
+  width: 100%;
+  font-family: "Noto Serif", sans-serif;
+}
+
+h1 {
+  font-size: 60px;
+  cursor: default;
+}
+
+form {
+  position: relative;
+  color: white;
+  margin-top: 15px;
+  padding-right: 5px;
+  font-family: "Roboto", sans-serif;
+}
+
+.quotes-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#genre-select {
+  color: #F5DEB3;
+  background: #131110;
+  border: none;
+  height: 40px;
+  width: 190px;
+  margin-right: 30px;
+  border: 2px solid #F5DEB3;
+  border-radius: 7px;
+  font-family: "Roboto", sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+
+#genre-select:focus {
+  outline: none;
+}
+
+#genre-select:disabled {
+  cursor: not-allowed;
+}
+
+.generate-btn {
+  color: #F5DEB3;
+  background-color: transparent;
+  height: 40px;
+  width: 100px;
+  margin-right: 65px;
+  border: 2px solid #F5DEB3;
+  border-radius: 7px;
+  font-family: "Roboto", sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+  transition: color 0.1s, background-color 0.1s;
+}
+
+.generate-btn:enabled:hover {
+  color: black;
+  background-color: #F5DEB3;
+  cursor: pointer;
+}
+
+.generate-btn:enabled:active {
+  opacity: 0.75;
+  outline: none;
+  cursor: pointer;
+}
+
+.generate-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.auto-generate-btn {
+  position: absolute;
+  bottom: 5px;
+  right: 0px;
+  height: 32px;
+  width: 32px;
+  cursor: pointer;
+}
+
+.is-generating {
+  animation-name: spin;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+.quote-text {
+  width: 85vw;
+  margin-top: 60px;
+}
+
+.fade-in-text {
+  animation: fadeIn 3s;
+}
+
+.fade-out-text {
+  animation: fadeOut 3s;
+}
+
+.quote-quotation {
+  position: relative;
+  font-size: 27px;
+  font-style: italic;
+}
+
+.quote-author {
+  color: #F5DEB3;
+  position: absolute;
+  right: 110px;
+  margin-top: 30px;
+  font-family: "Roboto", sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    display: block;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

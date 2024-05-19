@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quote Generator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <div class="quotes-container">
+    <h1>Quote Generator</h1>
+    <form name="quote-generator" action="" method="post">
+      <br />
+      <select name="genre" id="genre-select">
+        <option value="" selected disabled hidden>Select Genre</option>
+        <option value="philosophical">Philosophical Quotes</option>
+        <option value="inspirational">Inspirational Quotes</option>
+        <option value="wisdom">Wisdom Quotes</option>
+        <option value="wisdom">Success Quotes</option>
+        <option value="love">Love Quotes</option>
+      </select>
+      <button type="submit" class="generate-btn js-generate-btn">Generate</button>
+      <img alt="Auto Generate Icon" title="Auto Generate" class="auto-generate-btn js-auto-generate-btn"
+        src="./icons/arrows-rotate-solid.svg" />
+
+    </form>
+
+
+    <div class="quote-text js-quote-text">
+      <p class="quote-quotation js-quote-quotation"></p>
+      <p class="quote-author js-quote-author"></p>
+    </div>
+
+  </div>
+
+  <script src="./data/quotes/philosophicalQuotes.js"></script>
+  <script src="./data/quotes/inspirationalQuotes.js"></script>
+  <script src="./data/quotes/wisdomQuotes.js"></script>
+  <script src="./data/quotes/successQuotes.js"></script>
+  <script src="./data/quotes/loveQuotes.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
