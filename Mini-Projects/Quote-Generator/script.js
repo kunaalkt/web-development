@@ -25,7 +25,6 @@ autoGenerateButtonElement.addEventListener("click", (event) => {
       formElement.onsubmit(event);
       interval = setInterval(() => {
         formElement.onsubmit(event);
-        console.log("run");
       }, 8900);
     }
   } else {
