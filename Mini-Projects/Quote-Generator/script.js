@@ -25,7 +25,6 @@ autoGenerateButtonElement.addEventListener("click", (event) => {
       formElement.onsubmit(event);
       interval = setInterval(() => {
         formElement.onsubmit(event);
-        console.log("run");
       }, 8900);
     }
   } else {
@@ -88,7 +87,7 @@ function getQuoteFromId(array, id) {
 }
 
 function renderQuote(quotation, author) {
-  quoteQuotationElement.innerText = `"${quotation}"`;
+  quoteQuotationElement.innerText = `“${quotation}”`;
   quoteAuthorElement.innerText = `~ ${author}`;
   quoteTextElement.classList.remove("fade-out-text");
   quoteTextElement.classList.add("fade-in-text");
@@ -103,6 +102,9 @@ function toggleInput() {
     ) {
       genreSelectElement.disabled = false;
       generateButtonElement.disabled = false;
+    } else {
+      genreSelectElement.disabled = true;
+      generateButtonElement.disabled = true;
     }
   }
 }
