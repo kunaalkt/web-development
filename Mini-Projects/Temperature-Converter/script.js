@@ -8,7 +8,7 @@ const convertBtnElement = document.querySelector(".js-convert-btn");
 formElement.onsubmit = function getTemperature(event) {
   event.preventDefault();
 
-  const temperature = tempInputElement.value;
+  const temperature = Number(tempInputElement.value);
   const inputUnit = this.input.value;
   const convertUnit = this.convert.value;
 
