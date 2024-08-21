@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pixel Art Generator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="pixel-art-generator">
+    <h1>Pixel Art Canvas</h1>
+    <div>
+      <p class="height-input-text"></p>
+      <input class="js-height-input" type="range" min="0" max="50"/>
+      <p class="width-input-text"></p>
+      <input class="js-width-input" type="range" min="0" max="50"/>
+    </div>
+    <div id="btn-section">
+      <button class="create-btn">Create Grid</button>
+      <button class="clear-btn" disabled>Clear Grid</button>
+      <button class="delete-btn">Delete Grid</button>
+      <input class="color-input" type="color" />
+    </div>
+  </div>
+
+  <div class="grid-box">
+  </div>
+  <script src="script.js">
+  </script>
+</body>
+</html>
